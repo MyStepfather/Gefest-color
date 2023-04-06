@@ -2,6 +2,9 @@
 /*     height: 100vh; */
     padding: 24px 0 79px;
 }
+.promo-wrapper {
+    overflow: hidden;
+}
 
 .main-slider {
     position: relative;
@@ -25,6 +28,7 @@
             height: 216px;
             .slide__text {
                 padding-left: 10%;
+                padding-right: 25%;
                 font-size: 29px;
                 font-weight: 800;
             }
@@ -36,24 +40,32 @@
         }
     }
     &__buttons-wrapper {
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        width: 90px;
-        right: 55px;
-        bottom: calc((39/525) * 100%)
+        position: absolute !important;
+        width: 110px !important;
+        right: 50px !important;
+        bottom: calc((39/525) * 100%) !important;
     }
-    &__button-prev, &__button-next {
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #BED730;
-        border-radius: 50%;
-        img {
-            height: 85%;
-        }
-    }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.main-slider__button-prev,
+.main-slider__button-next {
+    background-color: $green;
+    background-image: url('../../../assets/img/icons/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+}
+.main-slider__button-next {
+    transform: rotate(180deg);
+    
 }
 
 .second-slider {
@@ -73,6 +85,11 @@
         justify-content: space-between;
         border-radius: 20px;
         background-color: #fff;
+        transition: 0.2s;
+        &:hover {
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+            
+        }
         &--active {
             background-color: $green;
             box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
@@ -145,7 +162,7 @@
 @media (max-width: 500px) {
     .main-slider {
         &__slide {
-            .slide__img{
+            .slide__img {
                 object-fit: cover;
             }
             .slide__border {

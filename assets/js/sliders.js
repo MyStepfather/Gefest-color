@@ -1,28 +1,10 @@
-// swiper element
-const swiperEl = document.querySelector('swiper-container');
-
-
-// swiper parameters
-const swiperParams = {
-    slidesPerView: 1,
-    breakpoints: {
-        640: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
+var mainSlider = new Swiper('.swiper-container.main-slider', {
+    // параметры слайдера
+    loop: false,
+    speed: 500,
+    spaceBetween: 200,
+    navigation: {
+        nextEl: '.main-slider__button-next',
+        prevEl: '.main-slider__button-prev'
     },
-    on: {
-        init() {
-        // ...
-        },
-    },
-    /* injectStylesUrls: ['/to/one.css'], */
-};
-
-// now we need to assign all parameters to Swiper element
-Object.assign(swiperEl, swiperParams);
-
-// and now initialize it
-swiperEl.initialize();
+});

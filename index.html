@@ -8,6 +8,8 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link rel="stylesheet" href="css/style.css?v=1">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -62,53 +64,50 @@
       <div class="content">
          <section class="promo ">
             <div class="promo-wrapper container">
-               <div class="main-slider">
-                  <div class="main-slider__wrapper" >
-                     <div class="main-slider__slide">
+               <div class="swiper-container main-slider">
+                  <div class="swiper-wrapper main-slider__wrapper" >
+                     <div class="swiper-slide main-slider__slide">
                         <img class="main-slider__slide slide__img" src="assets/img/slider.png" alt="">
                         <div class="main-slider__slide slide__border">
                               <h2 class="slide__text">Новое&nbsp;оборудование&nbsp;с сертификатами</h2>
                         </div>
                      </div>
-                     <!-- <div class="main-slider__slide">
-                        <img src="assets/img/slider_1.png" alt="">
-                        <div class="slide__border">
-                              <h2>Новое оборудование с сертификатами</h2>
+                     <div class="swiper-slide main-slider__slide">
+                        <img class="main-slider__slide slide__img" src="assets/img/slider_1.png" alt="">
+                        <div class="main-slider__slide slide__border">
+                              <h2 class="slide__text">Максимально сжатые сроки</h2>
                         </div>
                      </div>
-                     <div class="main-slider__slide">
-                        <img src="assets/img/slider_2.png" alt="">
-                        <div class="slide__border">
-                              <h2>Новое оборудование с сертификатами</h2>
+                     <div class="swiper-slide main-slider__slide">
+                        <img class="main-slider__slide slide__img" src="assets/img/slider_2.png" alt="">
+                        <div class="main-slider__slide slide__border">
+                              <h2 class="slide__text">Максимально сжатые сроки</h2>
                         </div>
                      </div>
-                     <div class="main-slider__slide">
-                        <img src="assets/img/slider_3.png" alt="">
-                        <div class="slide__border">
-                              <h2>Новое оборудование с сертификатами</h2>
+                     <div class="swiper-slide main-slider__slide">
+                        <img class="main-slider__slide slide__img" src="assets/img/slider_3.png" alt="">
+                        <div class="main-slider__slide slide__border">
+                              <h2 class="slide__text">Максимально сжатые сроки</h2>
                         </div>
                      </div>
-                     <div class="main-slider__slide">
-                        <img src="assets/img/slider_4.png" alt="">
-                        <div class="slide__border">
-                              <h2>Новое оборудование с сертификатами</h2>
+                     <div class="swiper-slide main-slider__slide">
+                        <img class="main-slider__slide slide__img" src="assets/img/slider_4.png" alt="">
+                        <div class="main-slider__slide slide__border">
+                              <h2 class="slide__text">Размеры камеры покраски 3x2x2 м</h2>
                         </div>
                      </div>
-                     <div class="main-slider__slide">
-                        <img src="assets/img/slider_5.png" alt="">
-                        <div class="slide__border">
-                              <h2>Новое оборудование с сертификатами</h2>
+                     <div class="swiper-slide main-slider__slide">
+                        <img class="main-slider__slide slide__img" src="assets/img/slider_5.png" alt="">
+                        <div class="main-slider__slide slide__border">
+                              <h2 class="slide__text">Новое&nbsp;оборудование&nbsp;с сертификатами</h2>
                         </div>
-                     </div> -->
+                     </div>
                   </div>
                   <div class="main-slider__buttons-wrapper">
-                     <div class="main-slider__button-prev">
-                        <img src="assets/img/icons/arrow-left.svg" alt="">
-                     </div>
-                     <div class="main-slider__button-next">
-                        <img src="assets/img/icons/arrow-right.svg" alt="">
-                     </div>
+                     <div class="swiper-button-prev main-slider__button-prev"></div>
+                     <div class="swiper-button-next main-slider__button-next"></div>
                   </div>
+                  
                </div>
                <div class="second-slider">
                   <div class="second-slider__wrapper">
@@ -234,6 +233,7 @@
    </div>
    
    <script src="assets/js/index.js"></script>
+   <script src="assets/js/sliders.js"></script>
 
 </body>
 
