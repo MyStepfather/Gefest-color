@@ -1,0 +1,135 @@
+.promo {
+    margin-top: 24px;
+}
+
+.main-slider {
+    position: relative;
+    &__wrapper {
+
+    }
+    &__slide {
+        position: relative;
+        overflow: hidden;
+        .slide__border {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 55px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.8);
+
+            display: flex;
+            align-items: center;
+            width: 535px;
+            height: 216px;
+            .slide__text {
+                padding-left: 10%;
+                font-size: 29px;
+                font-weight: 800;
+            }
+        }
+        .slide__img{
+            border-radius: 20px;
+            min-height: 405px;
+            // object-fit: cover;
+        }
+    }
+    &__buttons-wrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 90px;
+        right: 55px;
+        bottom: calc((39/525) * 100%)
+    }
+    &__button-prev, &__button-next {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $green;
+        border-radius: 50%;
+        img {
+            height: 85%;
+        }
+    }
+}
+
+.second-slider {
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    margin-top: 40px;
+    &__slide {
+        width: 100%;
+        max-width: 285px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 20px;
+        background-color: #fff;
+        &--active {
+            background-color: $green;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .main-slider {
+        &__slide {
+            .slide__img{
+                object-fit: cover;
+            }
+            .slide__border {
+                right: 24px;
+                height: 162px;
+                width: 399px;
+                .slide__text {
+                    max-width: 314px;
+                    font-size: 24px;
+                }
+            }
+        }
+        &__buttons-wrapper {
+            right: 24px;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .promo {
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .main-slider {
+        &__slide {
+            .slide__img{
+                object-fit: cover;
+            }
+            .slide__border {
+                right: 20px;
+                width: 223px;
+                height: 127px;
+                .slide__text {
+                    max-width: 173px;
+                    font-size: 16px;
+                }
+            }
+        }
+        &__buttons-wrapper {
+            right: 20px;
+        }
+    }
+}
