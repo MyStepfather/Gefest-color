@@ -5,10 +5,12 @@
 @import 'blocks/header';
 @import 'blocks/footer';
 @import 'blocks/promo';
+@import 'blocks/about';
+@import 'blocks/managers';
 
 body {
     font-family: "TTNormsPro-Regular", sans-serif;
-    background-color: #fff;
+    background-color: #FAFAFA;
     font-size: 16px;
     overflow-x: hidden;
     box-sizing: border-box;

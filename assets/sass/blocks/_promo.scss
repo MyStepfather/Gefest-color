@@ -1,12 +1,13 @@
 .promo {
-    margin-top: 24px;
+/*     height: 100vh; */
+    padding: 24px 0 79px;
 }
 
 .main-slider {
     position: relative;
-    &__wrapper {
+/*     &__wrapper {
 
-    }
+    } */
     &__slide {
         position: relative;
         overflow: hidden;
@@ -47,7 +48,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $green;
+        background-color: #BED730;
         border-radius: 50%;
         img {
             height: 85%;
@@ -56,23 +57,44 @@
 }
 
 .second-slider {
+    margin-top: 40px;
     &__wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    margin-top: 40px;
     &__slide {
         width: 100%;
+        padding: 44px 41px 38px 40px;
         max-width: 285px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: space-between;
         border-radius: 20px;
         background-color: #fff;
         &--active {
             background-color: $green;
             box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        }
+        .slide__txt {
+            max-width: 166px;
+            &__title {
+                /* max-width: 166px; */
+                font-weight: 800;
+                font-size: 12px;
+                line-height: 18px;
+                text-transform: uppercase;
+            }
+            &__desc {
+                margin-top: 24px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .slide__img {
+            margin-top: 20px;
         }
     }
 }
@@ -100,6 +122,14 @@
         }
         &__buttons-wrapper {
             right: 24px;
+        }
+    }
+    .second-slider {
+        margin-top: 24px;
+        &__slide {
+            width: 100%;
+            padding: 40px 36px 32px 36px;
+            max-width: 256px;
         }
     }
 }
@@ -130,6 +160,14 @@
         }
         &__buttons-wrapper {
             right: 20px;
+        }
+    }
+    .second-slider {
+        margin-top: 21px;
+        &__slide {
+            width: 100%;
+            padding: 25px 24px;
+            max-width: 211px;
         }
     }
 }
