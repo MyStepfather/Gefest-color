@@ -1,0 +1,31 @@
+.sale {
+    background-color: $green;
+    padding: 98px 0 85px 0;
+    &__title {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 44px;
+        text-align: center;
+    }
+    &__desc {
+        margin-top: 10px;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 44px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__btn {
+        margin: 0 auto;
+        margin-top: 58px;
+        width: 100%;
+        max-width: 261px;
+        transition: .3s;
+        &:hover {
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+            background-color: #333333;
+            color: #fff;
+        }
+    }
+}

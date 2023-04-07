@@ -1,0 +1,88 @@
+.services {
+    padding: 93px 0 103px;
+    &__title {
+        position: relative;
+        width: 387px;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        &::before {
+            content: "Услуги";
+            position: absolute;
+            top: -36px;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 17px;
+            text-transform: uppercase;
+            color: rgba(51, 51, 51, 0.3);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 70px;
+            top: -34px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $green;
+        }
+    }
+}
+.accordeon {
+    margin-top: 63px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__item {
+        width: 100%;
+        min-height: 126px;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #F2F2F2;
+        border-radius: 20px;
+        color: rgba(51, 51, 51, 0.4);
+        transition: 0.2s;
+    }
+    &__left-part {
+        /* margin-left: 50px; */
+        max-width: 700px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 65px;
+        font-weight: 800;
+    }
+    &__content {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title {
+        text-transform: uppercase;
+    }
+    &__descr {
+        display: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333333;
+/*         padding-bottom: 70px; */
+    }
+    &__right-part {
+        width: 77px;
+        height: 77px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.46);
+        background-image: url('../../../assets/img/icons/plus.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+}

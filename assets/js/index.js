@@ -24,7 +24,8 @@ function secondSlider() {
         };
     });
 }
-  
+
+// function price
 
 
 

@@ -2,11 +2,16 @@
 @import 'vars';
 @import 'buttons';
 @import 'common';
+@import 'fonts';
 @import 'blocks/header';
 @import 'blocks/footer';
 @import 'blocks/1-promo';
 @import 'blocks/2-about';
 @import 'blocks/3-managers';
+@import 'blocks/4-sale';
+@import 'blocks/5-services';
+@import 'blocks/6-price';
+@import 'blocks/7-reasons';
 
 body {
     font-family: "TTNormsPro-Regular", sans-serif;
