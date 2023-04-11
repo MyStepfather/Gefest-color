@@ -25,11 +25,43 @@ function secondSlider() {
     });
 }
 
+function topics () {
+// выбираем все элементы с классом "topic"
+    let topics = document.querySelectorAll('.topic');
+    // выбираем все кнопки с классом "button"
+    let buttons = document.querySelectorAll('.topic__btn');
+
+    // перебираем все элементы "topic" и добавляем на каждый обработчик события "click"
+    topics.forEach(function(topic) {
+        topic.addEventListener('click', function() {
+            // добавляем класс "topic--active" только на текущий элемент
+            topic.classList.add('topic--active');
+
+            // перебираем все кнопки и устанавливаем для каждой атрибут "style", чтобы она не отображалась
+            buttons.forEach(function(button) {
+                button.setAttribute('style', 'display: none;');
+            });
+
+            // находим кнопку, которая соответствует текущему топику
+            let button = topic.querySelector('.topic__btn');
+            if (button) {
+            // устанавливаем для найденной кнопки атрибут "style", чтобы она отображалась
+                button.setAttribute('style', 'display: flex;');
+            }
+
+            // перебираем все элементы "topic" и удаляем класс "topic--active" у всех, кроме текущего
+            topics.forEach(function(slide) {
+                if (slide !== topic) {
+                    slide.classList.remove('topic--active');
+                }
+            });
+        });
+    });
+}
+
+
 // function price
-
-
-
-
+topics();
 mobNav();
 secondSlider();
 
