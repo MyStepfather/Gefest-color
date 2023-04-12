@@ -39,7 +39,7 @@ var reviewsSlider = new Swiper('.swiper-container.reviews__slider', {
 var topicsSlider = new Swiper('.swiper-container.topics__container', {
     loop: false,
     speed: 500,
-    spaceBetween: 20,
+    spaceBetween: 40,
     centeredSlides: false,
     slidesPerView: 1,
     breakpoints: {

@@ -54,6 +54,7 @@
         background-color: transparent;
     }
     &__circle-2 {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -64,12 +65,25 @@
         background-color: $grey;
     }
     &__item {
-        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
         flex-direction: column;
         justify-content: space-between;
         gap: 20px;
         width: 100%;
         max-width: 204px;
+        background-color: #F2F2F2;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+        &--active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        
+        
         &-upper {
             display: flex;
             flex-direction: column;
@@ -96,6 +110,7 @@
         }
     }
     &__pic {
+        cursor: pointer;
         position: absolute;
         width: 62px;
         height: 62px;
@@ -104,6 +119,7 @@
         align-items: center;
         background-color: $green;
         border-radius: 50%;
+
         &:nth-child(1) {
             transform: rotate(0deg) translateY(-370%);
         }
@@ -124,6 +140,7 @@
         }
     }
 }
+
 
 .reasons-list {
     display: flex;
