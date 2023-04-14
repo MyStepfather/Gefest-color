@@ -30,8 +30,8 @@
                         <p class="">+7 495 748 98 38</p>
                     </a>
                     <div class="header__buttons">
-                        <button class="btn-grey mob-hidden">Записаться</button>
-                        <button class="btn-green">Заказать звонок</button>
+                        <button class="btn-grey mob-hidden form-trig-btn">Записаться</button>
+                        <button class="btn-green form-trig-btn">Заказать звонок</button>
                         <div class="nav-burger tablet-desc-hidden">
                             <i class="burger-pic"></i>
                         </div>
@@ -275,7 +275,7 @@
                 <div class="container">
                     <h2 class="sale__title">Первый покрас по цене краски</h2>
                     <h3 class="sale__desc">Сравните качество, сравните скорость!</h3>
-                    <button class="btn-white sale__btn">Записаться на покраску</button>
+                    <button class="btn-white sale__btn form-trig-btn">Записаться на покраску</button>
                 </div>
             </section>
             <section class="services">
@@ -293,7 +293,7 @@
                                     <p class="accordeon__descr accordeon__descr--active">Оперативная порошковая покраска дисков для автомобилей — бесплатная стоянка авто на время покраски и оперативный шиномонтаж.</p>
                                 </div>
                             </div>
-                            <div class="accordeon__right-part"></div>
+                            <div class="accordeon__right-part rotate" style="pointer-events: all;"></div>
                         </div>
                         <div class="accordeon__item">
                             <img class="accordeon__img" src="assets/img/services_2.png" alt="">
@@ -609,8 +609,8 @@
     </div>
 
     <!-- Модалки, попапы -->
-
-    <div id="price-1" class="modal modal-price-1">
+    
+    <div id="price-1" class="modal">
         <div class="modal__cross"><img src="assets/img/icons/cross-modal.svg" alt=""></div>
         <div class="modal__inner">
             <h3 class="modal__header">ЦЕНЫ НА ПОКРАСКУ АВТОМОБИЛЬНЫХ ДИСКОВ</h3>
@@ -656,13 +656,67 @@
                     <div class="col-3">от 2625 руб</div>
                 </div>
             </div>
-            <button class="btn-green modal__button">Оставить заявку</button>
+            <button class="btn-green modal__button form-trig-btn">Оставить заявку</button>
         </div>
     </div>
 
+    <div id="form-main" class="form">
+        <div class="form__cross modal__cross">
+            <img src="assets/img/icons/cross-modal.svg" alt="">
+        </div>
+        <h3 class="form__header modal__header">Оставьте заявку</h3>
+        <form id="form" action="" class="form__content">
+            <div class="form__inputs inputs">
+                <input type="text" class="inputs__input" placeholder="Имя">
+                <input type="tel" class="inputs__input" placeholder="Телефон">
+                <input type="email" class="inputs__input" placeholder="E-mail">
+                <textarea name="Message" id="" rows="10" class="inputs__txt-area" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="form__checkbox">
+                <input type="checkbox">
+                <p>Согласие на обработку персональных данных</p>
+            </div>
+        </form>
+        <button class="form__btn btn-green">Отправить заявку</button>
+    </div>
+
+    <div id="article-1" class="article scrollbar">
+
+        <div class="article__wrapper">
+            <div class="article__cross modal__cross">
+                <img src="assets/img/icons/cross-modal.svg" alt="">
+            </div>
+            <div class="article__header">
+                <h2 class="article__title">Особенности нанесения краски баллончиком</h2>
+                <p class="article__date">01.02.2022</p>
+            </div>
+            <div class="article__body">
+                <p>Покраска дисков – ответственная работа, которую рекомендуется проводить с использованием специальных инструментов. Наиболее простой вариант предполагает применение баллончика. Выбор такого метода позволяет быстро и качественно произвести окрашивание.</p>
+                <h3>Особенности применения баллончика</h3>
+                <p>Чтобы порошковая покраска прошла успешно, рекомендуется воспользоваться следующими советами:</p>
+                <ul>
+                    <li>обязательно протестируйте краску, нанеся ее на какой-нибудь ненужный предмет. Это поможет понять, каким образом распыляется вещество и поможет избежать его попадания на другие части авто, которые не подлежат окрашиванию;</li>
+                    <li>перед работой встряхните баллончик, чтобы смесь, находящаяся внутри него, обрела однородность;</li>
+                    <li>соблюдайте условия эксплуатации и хранения. Работа должна производиться при температуре не меньше +10 градусов по Цельсию. Только в таком случае краска будет застывать быстро и качественно. В результате вы получите тщательно выкрашенные диски с равномерным цветом покрытия;</li>
+                    <li>работать будет намного удобнее, если поместить диск на крючок;</li>
+                    <li>обратите внимание на баллончик с краской. Он может иметь вертикальный или круглый факел. Специалисты с большим опытом работы считаю, что большей экономичностью отличаются баллоны второго типа;</li>
+                    <li>большая часть современных дисков имеют сложную конфигурацию. Они оснащаются отверстиями и дополнительными элементами, что существенно усложняет процесс распределения красящего вещества из баллончика. Внимательно следите за тем, чтобы все детали были равномерно прокрашены;</li>
+                    <li>наносите состав в несколько слоев, причем не забывайте сделать интервал между ними. Выждите порядка 10-15 минут перед тем, как приступить к несению следующего слоя покрытия;</li>
+                    <li>перед тем, как приступить к использованию транспортного средства, обязательно дождитесь полного застывания краски;</li>
+                    <li>приобретайте краски с запасом, чтобы ее точно хватило для выполнения работы;</li>
+                    <li>соблюдайте меры предосторожности, прописанные в инструкции: не пытайтесь заправить баллон самостоятельно, учитывая, что он находится под давлением; храните его в темном месте; работайте в хорошо проветриваемом помещении.</li>
+                </ul>
+                <p>Представленные советы помогут справиться с такой работой, как покраска дисков, но Москва – город с развитой инфраструктурой, возможно, вам будет легче обратиться к специалисту, готовому взяться за работу.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="overlay"></div>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/sliders.js"></script>
-    <script src="assets/js/accordeon.js"></script>
+    <script src="assets/js/modals.js"></script>
+
 
 </body>
 

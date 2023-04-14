@@ -16,7 +16,9 @@
 @import 'blocks/9-topics';
 @import 'blocks/10-clients';
 @import 'blocks/footer';
-@import 'modal';
+@import 'modals';
+@import 'forms';
+@import 'articles';
 
 body {
     font-family: "TTNormsPro", sans-serif;
@@ -26,3 +28,5 @@ body {
     box-sizing: border-box;
     outline: none;
 }
+
+.scrollbar { overflow-y: scroll; scrollbar-width: none; -ms-overflow-style: none; }

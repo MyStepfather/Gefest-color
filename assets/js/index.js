@@ -123,6 +123,7 @@ function services() {
                     i.querySelector('.accordeon__img').classList.remove('accordeon__img--active');
                     i.querySelector('.accordeon__descr').classList.remove('accordeon__descr--active');
                     i.style.color = "rgba(51, 51, 51, 0.4)";
+                    i.querySelector('.accordeon__right-part').classList.remove('rotate');
                 }
             });
             
@@ -133,6 +134,8 @@ function services() {
                 item.querySelector('.accordeon__img').classList.add('accordeon__img--active');
                 item.querySelector('.accordeon__descr').classList.add('accordeon__descr--active');
                 item.style.color = "#000";
+                item.querySelector('.accordeon__right-part').classList.add('accordeon__right-part--active');
+                item.querySelector('.accordeon__right-part').classList.add('rotate');
             }
         });
     });
