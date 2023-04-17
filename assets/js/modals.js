@@ -54,26 +54,15 @@ function form() {
     
     buttons.forEach(button => {
         function openModal() {
-            let modals = document.querySelectorAll('.modal');
-            if (modals) {
-                modals.forEach(modal => {
-                    
-                })
-            }
-
-            body.style.overflowY = 'hidden';
-                
-            }
+            body.style.overflowY = 'hidden'; 
             form.classList.add('show');
             bcg.classList.add('show');
-            
         }
         function closeModal() {
             body.style.overflowY = 'visible';
             form.classList.remove('show');
             bcg.classList.remove('show');
         }
-
         button.addEventListener('click', openModal);
         cross.addEventListener('click', closeModal);
         bcg.addEventListener('click', closeModal);

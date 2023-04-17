@@ -1,12 +1,62 @@
+function smoothScroll() {
+    // выберите все ссылки на якоря на странице
+    let links = document.querySelectorAll('a[href^="#"]');
+
+    // обрабатываем каждую ссылку на якорь
+    links.forEach(link => {
+        link.addEventListener('click', event => {
+            // отменяем стандартное поведение ссылки
+            event.preventDefault();
+
+            // получаем id якоря из атрибута href ссылки
+            const id = link.getAttribute('href').slice(1);
+
+            // находим элемент с нужным якорем на странице
+            const target = document.getElementById(id);
+
+            // проверяем, существует ли такой элемент
+            if (target) {
+            // вычисляем координаты элемента на странице
+                const top = target.getBoundingClientRect().top + window.pageYOffset;
+
+                // плавно перемещаемся к элементу
+                window.scrollTo({
+                    top,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+
+
+
+
+
 // Моб меню
 function mobNav () {
     let navbarToggler = document.querySelector(".nav-burger"); 
     let myNavbar = document.querySelector(".nav");
     let burgerPic = document.querySelector(".burger-pic");
+    let body = document.querySelector('body');
+    let links = document.querySelectorAll('a[href^="#"]');
 
     navbarToggler.onclick = function () {
         myNavbar.classList.toggle("nav--active"); /* открытие меню */
         burgerPic.classList.toggle("burger-pic--open"); /* смена бургера на крестик */
+        links.forEach(function (link) {
+            link.addEventListener('click' , function() {
+                burgerPic.classList.remove("burger-pic--open");
+                myNavbar.classList.remove("nav--active");
+                body.style.overflowY = 'auto';
+            })
+        })
+        if (myNavbar.classList.contains("nav--active")) {
+            body.style.overflowY = 'hidden';
+        } else {
+            body.style.overflowY = 'auto';
+        }
     }
 };
 
@@ -25,7 +75,7 @@ function secondSlider() {
     });
 }
 
-/* function topics () {
+function topics () {
 // выбираем все элементы с классом "topic"
     let topics = document.querySelectorAll('.topic');
     // выбираем все кнопки с классом "button"
@@ -57,7 +107,7 @@ function secondSlider() {
             });
         });
     });
-} */
+}
 
 
 function circleReasons () {
@@ -141,9 +191,33 @@ function services() {
     });
 }
 
+function navSticky() {
+    let nav = document.querySelector('.navigate');
+    let headerHeight = document.querySelector('.header').clientHeight;
 
+    function navActive() {
+        if(document.body.clientWidth > 768) {
+            if (window.pageYOffset > headerHeight) {
+                nav.classList.add('navigate--sticky');
+            } else {
+                nav.classList.remove('navigate--sticky');
+            }
+        } else {
+            nav.classList.remove('navigate--sticky');
+        }
+    }
+    if (nav) {
+        navActive();
+    }
+    addEventListener("scroll", (event) => {
+        navActive();
+    });
+}
+
+smoothScroll();
+navSticky();
 services();
-// topics();
 mobNav();
 secondSlider();
 circleReasons();
+// topics();

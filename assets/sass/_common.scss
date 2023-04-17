@@ -17,6 +17,9 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
+/*     &--none {
+        width: unset;
+    } */
 }
 
 @media(max-width: 767px) {
@@ -58,4 +61,8 @@
 .scrollbar::-webkit-scrollbar {
     width: 0;
     height: 0;
+}
+
+.mw-768 {
+    display: none;
 }
