@@ -28,3 +28,15 @@ body {
     box-sizing: border-box;
     outline: none;
 }
+
+@media(max-width: 560px) {
+    .about-header__title,
+    .reasons__title,
+    .services__title,
+    .price__title {
+        font-size: 24px;
+        line-height: 30px;
+        width: unset;
+        width: 100%;
+    }
+}

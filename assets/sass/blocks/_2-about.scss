@@ -140,6 +140,11 @@
 
     }
 }
+@media(max-width: 768px) {
+    .about-header__titlemax-width {
+        max-width: 219px;
+    }
+}
 
 @media(max-width: 650px) {
     .about__wrapper {

@@ -38,8 +38,9 @@
         display: flex;
         flex-direction:row;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         color: rgba(51, 51, 51, 0.4);
+        font-style: normal;
         font-weight: 800;
         font-size: 16px;
         line-height: 18px;
@@ -60,8 +61,8 @@
     &__name {
         width: 100%;
         max-width: 895px;
-        min-height: 48px;
-        padding: 10px 10px 10px 146px;
+        // min-height: 48px;
+        padding: 15px 10px 15px 146px;
         margin-right: 20px;
         display: flex;
         align-items:center;
@@ -77,8 +78,8 @@
     &__cost {
         width: 100%;
         max-width: 285px;
-        height: 100%;
-        min-height: 48px;
+        // height: 100%;
+        // min-height: 48px;
         padding: 10px 0;
         display: flex;
         align-items:center;
@@ -91,5 +92,52 @@
             background-color: $green;
             color: #333333;
         } */
+    }
+}
+
+@media(max-width: 1010px) {
+    .price__name {
+        padding-left: 24px;
+        margin-right: 10px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .price__cost {
+        max-width: 285px;
+        padding-left: 24px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media(max-width: 768px) {
+    .price__name {
+        padding-left: 24px;
+        margin-right: 10px;
+    }
+    .price__cost {
+        max-width: 156px;
+        padding-left: 24px;
+        padding-right: 10px;
+    }
+}
+
+@media(max-width: 500px) {
+    .price {
+        padding-top: 79px;
+        padding-bottom: 68px;
+    }
+    .price__name {
+        font-size: 13px;
+        margin-right: 0;
+        color: #333333;
+    }
+    .price__cost {
+        font-size: 13px;
+        color: #333333;
+        background-color: $green;
+
     }
 }

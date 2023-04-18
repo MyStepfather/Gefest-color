@@ -66,3 +66,13 @@
 .mw-768 {
     display: none;
 }
+@media(max-width: 650px) {
+    .mob-hidden-650 {
+        display: none !important;
+    }
+}
+@media(min-width: 650px) {
+    .desc-hidden-650 {
+        display: none !important;
+    }
+}

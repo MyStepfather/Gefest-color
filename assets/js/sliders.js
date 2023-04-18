@@ -35,6 +35,19 @@ var managerSlider = new Swiper('.swiper-container.managers-slider', {
       },
 })
 
+var servicesSlider = new Swiper('.swiper-container.services-container', {
+    loop: false,
+    speed: 500,
+    spaceBetween: 20,
+    controller: true,
+    slidesPerView: "auto",
+        navigation: {
+        nextEl: '.services__button-next',
+        prevEl: '.services__button-prev'
+    },
+
+})
+
 var reviewsSlider = new Swiper('.swiper-container.reviews__slider', {
     loop: false,
     speed: 500,
