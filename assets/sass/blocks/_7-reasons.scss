@@ -172,3 +172,12 @@
         line-height: 18px;
     }
 }
+
+
+@media(max-width: 1080px) {
+    .reasons__content {
+        flex-direction: column;
+        gap: 66px;
+        margin-top: 71px;
+    }
+}

@@ -6,6 +6,7 @@
         font-size: 30px;
         line-height: 44px;
         text-align: center;
+        text-transform: uppercase;
     }
     &__desc {
         margin-top: 10px;
@@ -20,6 +21,7 @@
         margin: 0 auto;
         margin-top: 58px;
         width: 100%;
+        font-weight: 800;
         max-width: 261px;
         transition: .3s;
         &:hover {
@@ -27,5 +29,28 @@
             background-color: #333333;
             color: #fff;
         }
+    }
+}
+
+@media(max-width: 768px) {
+    .sale__title, .sale__desc {
+        font-size: 24px;
+    }
+    .sale__btn {
+        margin-top: 36px;
+    }
+}
+
+@media(max-width: 360px) {
+    .sale {
+        padding: 67px 0 60px;
+    }
+    
+    .sale__title, .sale__desc {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .sale__btn {
+        margin-top: 34px;
     }
 }

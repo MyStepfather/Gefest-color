@@ -24,6 +24,17 @@ var secondSlider = new Swiper('.swiper-container.second-slider', {
     },
 });
 
+var managerSlider = new Swiper('.swiper-container.managers-slider', {
+    loop: false,
+    speed: 500,
+    spaceBetween: 20,
+    controller: true,
+    slidesPerView: "auto",
+    pagination: {
+        el: '.swiper-pagination',
+      },
+})
+
 var reviewsSlider = new Swiper('.swiper-container.reviews__slider', {
     loop: false,
     speed: 500,

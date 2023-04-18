@@ -4,13 +4,18 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: stretch;
     }
 }
+.swiper-slide.manager {
+    height: unset !important;
+}
+
 .manager {
     display: flex;
     flex-direction: column;
     padding: 44px 34px 90px 30px;
-    width: 100%;
+    width: calc(33% - 40px) ;
     max-width: 387px;
     align-items: center;
     background: #FFFFFF;
@@ -47,5 +52,12 @@
     &-downer {
         margin-top: 34px;
         text-align: center;
+    }
+}
+
+
+@media(max-width: 340px) {
+    .managers {
+        padding: 50px 0;
     }
 }

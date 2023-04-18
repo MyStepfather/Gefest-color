@@ -63,7 +63,7 @@ function form() {
 
             body.style.overflowY = 'hidden';
                 
-            }
+            
             form.classList.add('show');
             bcg.classList.add('show');
             
