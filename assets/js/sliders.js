@@ -1,6 +1,8 @@
 var mainSlider = new Swiper('.swiper-container.main-slider', {
     // параметры слайдера
-    loop: false,
+    autoplay: true,
+    delay: 300,
+    loop: true,
     speed: 500,
     spaceBetween: 200,
     navigation: {

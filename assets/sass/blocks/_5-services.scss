@@ -130,7 +130,7 @@
 
 @media(max-width: 650px) {
     .services {
-        padding: 93px 0 40px;
+        padding: 93px 0 0px;
     }
     .services__title {
         font-weight: 800;
@@ -138,6 +138,7 @@
         line-height: 30px;
     }
     .services-container {
+        position: relative;
         margin-top: 26px;
         display: flex;
         flex-direction: row;
@@ -198,12 +199,12 @@
     .services-slider__right-part {
         margin-right: 0;
         margin-left: auto;
+        pointer-events: all;
     }
     .services-slider__buttons-wrapper {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
+        z-index: 10;
         left: 50%;
         transform: translateX(-50%);
+        bottom: 40px !important;
     }
 }
