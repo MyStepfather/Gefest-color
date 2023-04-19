@@ -84,3 +84,11 @@ var topicsSlider = new Swiper('.swiper-container.topics__container', {
         prevEl: '.topics__button-prev'
     },
 })
+
+var clientsSlider = new Swiper('.swiper-container.clients-container', {
+    loop: false,
+    speed: 500,
+    spaceBetween: 20,
+    centeredSlides: false,
+    slidesPerView: 1,
+})
