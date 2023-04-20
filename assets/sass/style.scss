@@ -2,7 +2,7 @@
 @import 'vars';
 @import 'buttons';
 @import 'common';
-@import 'fonts';
+@import '../fonts/stylesheet.css';
 @import 'blocks/header';
 @import 'blocks/footer';
 @import 'blocks/1-promo';
@@ -21,7 +21,7 @@
 @import 'articles';
 
 body {
-    font-family: "TTNormsPro", sans-serif;
+    font-family: 'TT Norms Pro';
     background-color: #FAFAFA;
     font-size: 16px;
     overflow-x: hidden;
