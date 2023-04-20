@@ -39,12 +39,17 @@
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
 
-        width: 100%;
+        // width: 100%;
         max-width: 183px;
-        height: 83px;
-        display: flex;
+        height: 83px !important;
+        display: flex !important;
         justify-content: center;
         align-items: center;
 
+    }
+}
+@media(max-width: 768px) {
+    .clients {
+        padding: 102px 0 62px;
     }
 }

@@ -93,3 +93,42 @@
 #price-1 {
     width: calc(100% - 128px); 
 }
+
+@media(max-width: 768px) {
+    .modal__inner {
+        padding: 82px 0 66px 0;
+    }
+    .modal__header {
+        padding-left: 16px;
+    }
+    .table__row {
+        padding: 12px 0 12px 53px;
+    }
+    .table__header, .table__row {
+        gap: unset;
+        justify-content: space-between;
+    }
+}
+@media(max-width: 500px) {
+    #price-1 {
+        width: calc(100% - 34px);
+    }
+    .table__header {
+        font-size: 11px;
+    }
+    .table__row {
+        padding: 12px 0 12px 16px;
+        font-size: 13px;
+        .col-1 {
+            width: 30%;
+            
+        }
+        .col-2 {
+            width: 35%;
+
+        }
+        .col-3 {
+            width: 35%;
+        }
+    }
+}

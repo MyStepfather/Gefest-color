@@ -33,8 +33,23 @@ var managerSlider = new Swiper('.swiper-container.managers-slider', {
     controller: true,
     slidesPerView: "auto",
     pagination: {
-        el: '.swiper-pagination',
-      },
+        el: '.swiper-pagination.managers-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: "auto",
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1350: {
+            slidesPerView: 3
+        }
+    },
 })
 
 var servicesSlider = new Swiper('.swiper-container.services-container', {
@@ -43,7 +58,7 @@ var servicesSlider = new Swiper('.swiper-container.services-container', {
     spaceBetween: 20,
     controller: true,
     slidesPerView: "auto",
-        navigation: {
+    navigation: {
         nextEl: '.services__button-next',
         prevEl: '.services__button-prev'
     },
@@ -67,8 +82,11 @@ var topicsSlider = new Swiper('.swiper-container.topics__container', {
     speed: 500,
     spaceBetween: 40,
     centeredSlides: false,
-    slidesPerView: 1,
+    // slidesPerView: 1,
     breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
         768: {
             slidesPerView: 2,
         },
@@ -86,9 +104,10 @@ var topicsSlider = new Swiper('.swiper-container.topics__container', {
 })
 
 var clientsSlider = new Swiper('.swiper-container.clients-container', {
+    autoplay: true,
     loop: false,
     speed: 500,
     spaceBetween: 20,
     centeredSlides: false,
-    slidesPerView: 1,
+    slidesPerView: "auto"
 })

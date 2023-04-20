@@ -206,9 +206,12 @@
         padding: 93px 0 50px;
         &-item {
             gap: 22px;
-        }
-        &-item__num {
-            flex-shrink: 0;
+            &__num {
+                flex-shrink: 0;
+            }
+            &__item {
+                font-weight: 400;
+            }
         }
     }
     .prikol {

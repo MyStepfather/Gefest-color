@@ -11,6 +11,12 @@ function price1 () {
             body.style.overflowY = 'hidden';
             modal.classList.add('show');
             bcg.classList.add('show');
+            let priceBtn = modal.querySelector('.btn-green');
+            let form = document.querySelector('#form-main');
+            priceBtn.addEventListener('click', function() {
+                modal.classList.remove('show');
+                form.classList.add('show');
+            })
         }
         function closeModal() {
             body.style.overflowY = 'visible';

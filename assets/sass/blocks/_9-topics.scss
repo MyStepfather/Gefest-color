@@ -95,3 +95,20 @@
         display: flex;
     }
 }
+
+@media(max-width: 768px) {
+    .topics {
+        padding: 83px 0 84px 0;
+    }
+    .topics__buttons-wrapper {
+        right: 50% !important;
+        transform: translateX(50%);
+        bottom: 45px !important;
+    }
+    .topic {
+        max-width: unset;
+    }
+    .topic__btn {
+        margin-top: 20px;
+    }
+}

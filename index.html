@@ -26,7 +26,11 @@
                 </a>
                 <div class="header__contacts">
                     <a href="tel:+7 495 748 98 38" class="header__tel mob-hidden">
-                        <img src="assets/img/icons/phone-header.svg" alt="">
+                        <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.073" cy="17.9492" r="17.073" fill="#BED730"/>
+                            <path d="M12.9502 12.5578H15.4874L16.756 15.7293L15.1702 16.6807C15.8495 18.0581 16.9643 19.1729 18.3417 19.8522L19.2931 18.2664L22.4646 19.535V22.0722C22.4646 22.4086 22.3309 22.7313 22.093 22.9692C21.8551 23.2071 21.5325 23.3408 21.196 23.3408C18.7218 23.1904 16.3882 22.1397 14.6354 20.387C12.8827 18.6342 11.832 16.3006 11.6816 13.8264C11.6816 13.4899 11.8153 13.1673 12.0532 12.9294C12.2911 12.6915 12.6138 12.5578 12.9502 12.5578Z" fill="white"/>
+                        </svg>
+                            
                         <p class="">+7 495 748 98 38</p>
                     </a>
                     <div class="header__buttons">
@@ -57,8 +61,8 @@
                     <a href="#footer" class="nav__item">контакты</a>
                 </div>
                 <div class="nav__footer header__buttons">
-                    <button class="btn-grey btn-grey_mob-nav tablet-desc-hidden">Записаться</button>
-                    <button class="btn-green btn-green_mob-nav tablet-desc-hidden">Заказать звонок</button>
+                    <button class="btn-grey btn-grey_mob-nav tablet-desc-hidden form-trig-btn">Записаться</button>
+                    <button class="btn-green btn-green_mob-nav tablet-desc-hidden form-trig-btn">Заказать звонок</button>
                 </div>
             </div>
         </nav>
@@ -304,6 +308,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination managers-pagination"></div>
                 </div>
             </section>
             <section class="sale">
@@ -628,8 +633,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-prev main-slider__button-prev topics__button-prev"></div>
-                    <div class="swiper-button-next main-slider__button-next topics__button-next"></div>
+                    <div class="main-slider__buttons-wrapper topics__buttons-wrapper tablet-desc-hidden">
+                        <div class="swiper-button-prev main-slider__button-prev topics__button-prev"></div>
+                        <div class="swiper-button-next main-slider__button-next topics__button-next"></div>
+                    </div>
+                    <div class="swiper-button-prev main-slider__button-prev topics__button-prev mob-hidden"></div>
+                    <div class="swiper-button-next main-slider__button-next topics__button-next mob-hidden"></div>
                 </div>
             </section>
             <section id="clients" class="clients">
@@ -764,7 +773,7 @@
             <img src="assets/img/icons/cross-modal.svg" alt="">
         </div>
         <h3 class="form__header modal__header">Оставьте заявку</h3>
-        <form id="form" action="" class="form__content">
+        <!-- <form id="form" action="" method="post" class="form__content">
             <div class="form__inputs inputs">
                 <input type="text" class="inputs__input" placeholder="Имя">
                 <input type="tel" class="inputs__input" placeholder="Телефон">
@@ -775,8 +784,11 @@
                 <input type="checkbox">
                 <p>Согласие на обработку персональных данных</p>
             </div>
-        </form>
-        <button class="form__btn btn-green">Отправить заявку</button>
+            
+            <button type="submit" class="form__btn btn-green" name="submit" value="Отправить">Отправить заявку</button>
+        </form>     -->
+        <script async src="https://okocrm.ru/static/oko-static/js/form.js?token=PDqCILxn0xFZxy4QTp6_c4gjOmPsrtscIWefIvnIuR_yy4qSgQ96GM8-78K9rj4gLajb_qNW7kdt-z1zaR3hkql5rEzQcEntRrSi094qygjhS3C-UbMcF_ztZF4X6JJSKT4jDXrVxodpY5garkC5lsqD2vtA6PyHsOzyvDZ4ijDrQbtDEor_X8imlSsN4KdxuhVYB9rP7yUUUqcWyq2LKcr_vKfgO0ktqljbo4-YDEIVnr7Jx2SMcwvCBUcMKdKmyk3KebIScIwk0prk7kirayYWFZrdfJMc1uJDBMuv3H6oUFc7t7Mi-pfh66eGPH5_XVla1hyLqVh8ljiH94zzLQ%3D%3D"></script>
+
     </div>
 
     <div id="article-1" class="article scrollbar">
