@@ -57,6 +57,8 @@ function form() {
     let buttons = document.querySelectorAll('.form-trig-btn');
     let form = document.querySelector('#form-main');
     let cross = document.querySelector('.form__cross');
+    let nav = document.querySelector('#nav');
+    let burger = document.querySelector('.burger-pic');
     
     buttons.forEach(button => {
         function openModal() {
@@ -65,9 +67,15 @@ function form() {
             bcg.classList.add('show');
         }
         function closeModal() {
-            body.style.overflowY = 'visible';
-            form.classList.remove('show');
-            bcg.classList.remove('show');
+            if (nav.classList.contains('nav--active')) {
+                form.classList.remove('show');
+                bcg.classList.remove('show');
+                body.style.overflowY = 'hidden'; 
+            } else {
+                form.classList.remove('show');
+                bcg.classList.remove('show');
+                body.style.overflowY = 'visible';
+            }
         }
         button.addEventListener('click', openModal);
         cross.addEventListener('click', closeModal);

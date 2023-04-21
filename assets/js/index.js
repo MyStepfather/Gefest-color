@@ -52,6 +52,9 @@ function mobNav () {
                 body.style.overflowY = 'auto';
             })
         })
+/*         while (myNavbar.classList.contains("nav--active")) {
+            body.style.overflowY = 'hidden';
+        } */
         if (myNavbar.classList.contains("nav--active")) {
             body.style.overflowY = 'hidden';
         } else {
@@ -219,9 +222,12 @@ function upBtn() {
 
     window.addEventListener("scroll", () => {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollToTopBtn.style.display = "block";
+            // scrollToTopBtn.style.display = "block";
+            scrollToTopBtn.style.opacity = "1";
+            // scrollToTopBtn.style.transition = "1s";
         } else {
-            scrollToTopBtn.style.display = "none";
+            // scrollToTopBtn.style.display = "none";
+            scrollToTopBtn.style.opacity = "0";
         }
     });
     
