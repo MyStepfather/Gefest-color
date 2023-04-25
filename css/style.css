@@ -1482,7 +1482,7 @@ img {
     padding-right: 10px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   .price {
     padding-top: 79px;
     padding-bottom: 68px;
@@ -2586,11 +2586,14 @@ img {
   position: relative;
 }
 
+/* .for-safari {
+    position:relative;
+    overflow-x:hidden;
+} */
 body {
   font-family: "TT Norms Pro";
   background-color: #FAFAFA;
   font-size: 16px;
-  overflow-x: hidden;
   box-sizing: border-box;
   outline: none;
 }
@@ -2608,4 +2611,10 @@ body {
 }
 html {
   max-width: 100vw;
+}
+
+.page {
+  overflow-x: hidden;
+  height: 100vh;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
