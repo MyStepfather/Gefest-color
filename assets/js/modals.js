@@ -1,4 +1,5 @@
 let body = document.querySelector('body');
+let html = document.querySelector('html');
 let bcg = document.querySelector('.overlay');
 
 function price1 () {
@@ -8,7 +9,8 @@ function price1 () {
     
     buttons.forEach(button => {
         function openModal() {
-            body.style.overflowY = 'hidden';
+            body.classList.add('overflow-y-hidden');
+            html.classList.add('overflow-y-hidden');
             modal.classList.add('show');
             bcg.classList.add('show');
             let priceBtn = modal.querySelector('.btn-green');
@@ -19,7 +21,8 @@ function price1 () {
             })
         }
         function closeModal() {
-            body.style.overflowY = 'visible';
+            body.classList.remove('overflow-y-hidden');
+            html.classList.remove('overflow-y-hidden');
             modal.classList.remove('show');
             bcg.classList.remove('show');
         }
@@ -37,12 +40,14 @@ function article() {
     
     buttons.forEach(button => {
         function openModal() {
-            body.style.overflowY = 'hidden';
+            body.classList.add('overflow-y-hidden');
+            html.classList.add('overflow-y-hidden');
             modal.classList.add('show');
             bcg.classList.add('show');
         }
         function closeModal() {
-            body.style.overflowY = 'visible';
+            body.classList.remove('overflow-y-hidden');
+            html.classList.remove('overflow-y-hidden');
             modal.classList.remove('show');
             bcg.classList.remove('show');
         }
@@ -62,7 +67,8 @@ function form() {
     
     buttons.forEach(button => {
         function openModal() {
-            body.style.overflowY = 'hidden'; 
+            body.classList.add('overflow-y-hidden');
+            html.classList.add('overflow-y-hidden');
             form.classList.add('show');
             bcg.classList.add('show');
         }
@@ -70,11 +76,13 @@ function form() {
             if (nav.classList.contains('nav--active')) {
                 form.classList.remove('show');
                 bcg.classList.remove('show');
-                body.style.overflowY = 'hidden'; 
+                body.classList.add('overflow-y-hidden');
+                html.classList.add('overflow-y-hidden');
             } else {
                 form.classList.remove('show');
                 bcg.classList.remove('show');
-                body.style.overflowY = 'visible';
+                body.classList.remove('overflow-y-hidden');
+                html.classList.remove('overflow-y-hidden');
             }
         }
         button.addEventListener('click', openModal);

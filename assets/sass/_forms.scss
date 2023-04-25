@@ -15,6 +15,12 @@
     z-index: 1000;
     opacity: 0;
     transition: 0.2s ease-in-out;
+    @media(max-height: 860px) {
+        overflow-y: scroll;
+        height: 90vh;
+    }
+    
+
     
     &__cross {
         position: absolute;

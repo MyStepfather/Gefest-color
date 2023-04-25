@@ -82,3 +82,12 @@
         display: none !important;
     }
 }
+.overflow-y-hidden {
+    overflow: hidden;
+    // position: fixed;
+    // height: 100vh;
+}
+
+.none {
+    display: none;
+}
