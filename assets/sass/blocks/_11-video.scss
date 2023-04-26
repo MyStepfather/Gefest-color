@@ -29,15 +29,28 @@
     }
     &__container {
         position: relative;
+        overflow-x: hidden;
+        border-radius: 20px;
+        background-color: #000;
     }
     &__wrapper {
         width: 100%;
         height: fit-content;
-        border-radius: 20px;
-        background-color: #000;
     }
     &__content {
         display: block;
-        margin: 0 auto;
+        max-height: 637px;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .video {
+        padding: 83px 0 84px 0;
+    }
+    .video__buttons-wrapper {
+        right: 50% !important;
+        transform: translateX(50%);
+        bottom: 45px !important;
     }
 }

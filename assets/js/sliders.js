@@ -114,6 +114,12 @@ var clientsSlider = new Swiper('.swiper-container.clients-container', {
 
 var videoSlider = new Swiper('.swiper-container.video__container', {
     slidesPerView: 1,
+    spaceBetween: 20,
+    centeredSlides: true,
+    navigation: {
+        nextEl: '.video__button-next',
+        prevEl: '.video__button-prev'
+    },
     pagination: {
         el: '.swiper-pagination.video__pagination',
         clickable: true,
