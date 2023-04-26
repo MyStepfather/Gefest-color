@@ -85,13 +85,13 @@ var topicsSlider = new Swiper('.swiper-container.topics__container', {
     // slidesPerView: 1,
     breakpoints: {
         0: {
-            slidesPerView: 1,
+            slidesPerView: 'auto',
         },
         768: {
             slidesPerView: 2,
         },
         1024: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
         1350: {
             slidesPerView: 3
@@ -110,4 +110,12 @@ var clientsSlider = new Swiper('.swiper-container.clients-container', {
     spaceBetween: 20,
     centeredSlides: false,
     slidesPerView: "auto"
+})
+
+var videoSlider = new Swiper('.swiper-container.video__container', {
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination.video__pagination',
+        clickable: true,
+    },
 })

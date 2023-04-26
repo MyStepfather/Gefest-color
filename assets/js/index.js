@@ -43,20 +43,18 @@ function mobNav () {
     let html = document.querySelector('html');
     let links = document.querySelectorAll('a[href^="#"]');
 
-    burger.onclick = function () {
+    burger.addEventListener ('click', function() {
         myNavbar.classList.add("nav--active"); /* открытие меню */
+        burgerCross.classList.remove('none');
         burger.classList.add('none');
         links.forEach(function (link) {
             link.addEventListener('click' , function() {
-                burgerPic.classList.remove("burger-pic--open");
                 myNavbar.classList.remove("nav--active");
                 body.classList.remove('overflow-y-hidden');
                 html.classList.remove('overflow-y-hidden');
+                burger.classList.remove('none');
             })
         })
-/*         while (myNavbar.classList.contains("nav--active")) {
-            body.style.overflowY = 'hidden';
-        } */
         if (myNavbar.classList.contains("nav--active")) {
             body.classList.add('overflow-y-hidden');
             html.classList.add('overflow-y-hidden');
@@ -64,7 +62,16 @@ function mobNav () {
             body.classList.remove('overflow-y-hidden');
             html.classList.remove('overflow-y-hidden');
         }
-    }
+    })
+    burgerCross.addEventListener('click', function() {
+        myNavbar.classList.remove('nav--active');
+        burger.classList.remove('none');
+        burgerCross.classList.add('none');
+        if (!myNavbar.classList.contains("nav--active")) {
+            body.classList.remove('overflow-y-hidden');
+            html.classList.remove('overflow-y-hidden');
+        }
+    })
 };
 
 function secondSlider() {

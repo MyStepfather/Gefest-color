@@ -124,6 +124,10 @@
     }
 } */
 
+.nav-burger, .burger-cross {
+    cursor: pointer;
+}
+
 @media(max-width: 1300px) {
     .header {
         &__contacts {
@@ -203,7 +207,8 @@
             margin: 35px 0 35px;
             flex-direction: column;
             justify-content: space-between;
-            min-height: 330px;
+            min-height: 210px;
+            height: 50%;
             a {
                 font-weight: 700;
                 font-size: 13px;

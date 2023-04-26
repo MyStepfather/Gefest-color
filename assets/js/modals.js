@@ -35,26 +35,37 @@ function price1 () {
 
 function article() {
     let buttons = document.querySelectorAll('.topic__btn');
-    let modal = document.querySelector('#article-1');
-    let cross = document.querySelector('.article__cross');
+    let modal = document.querySelectorAll('.article');
+    let cross = document.querySelectorAll('.article__cross');
     
-    buttons.forEach(button => {
-        function openModal() {
-            body.classList.add('overflow-y-hidden');
-            html.classList.add('overflow-y-hidden');
-            modal.classList.add('show');
-            bcg.classList.add('show');
-        }
+    buttons.forEach((button, index) => {
         function closeModal() {
             body.classList.remove('overflow-y-hidden');
             html.classList.remove('overflow-y-hidden');
-            modal.classList.remove('show');
+            modal[index].classList.remove('show');
             bcg.classList.remove('show');
         }
-
+        function openModal() {
+            body.classList.add('overflow-y-hidden');
+            html.classList.add('overflow-y-hidden');
+            modal[index].classList.add('show');
+            bcg.classList.add('show');
+            let a = modal[index].querySelector('.span-green');
+            if(a) {
+                a.addEventListener('click', closeModal);
+            }
+        }
         button.addEventListener('click', openModal);
-        cross.addEventListener('click', closeModal);
         bcg.addEventListener('click', closeModal);
+    });
+    
+    cross.forEach(crossElement => {
+        crossElement.addEventListener('click', () => {
+            body.classList.remove('overflow-y-hidden');
+            html.classList.remove('overflow-y-hidden');
+            modal.forEach(m => m.classList.remove('show'));
+            bcg.classList.remove('show');
+        });
     });
 }
 
