@@ -112,7 +112,7 @@ var clientsSlider = new Swiper('.swiper-container.clients-container', {
     slidesPerView: "auto"
 })
 
-var videoSlider = new Swiper('.swiper-container.video__container', {
+/* var videoSlider = new Swiper('.swiper-container.video__container', {
     slidesPerView: 1,
     spaceBetween: 20,
     centeredSlides: true,
@@ -125,3 +125,38 @@ var videoSlider = new Swiper('.swiper-container.video__container', {
         clickable: true,
     },
 })
+ */
+/* videoSlider.on('slideChange', function () {
+    // получить текущий активный слайд
+    var activeSlide = ;
+    // вызвать функцию клика для активного слайда
+    activeSlide.click();
+  }); */
+
+var galleryThumbs = new Swiper('.swiper-container.gallery-thumbs__container', {
+    spaceBetween: 20,
+    slidesPerView: 4,
+    centeredSlides: false,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    navigation: {
+        nextEl: '.gallery-thumbs__button-next',
+        prevEl: '.gallery-thumbs__button-prev'
+    },
+
+})
+
+var gallerySlider = new Swiper('.swiper-container.gallery__container', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    centeredSlides: true,
+    navigation: {
+        nextEl: '.gallery__button-next',
+        prevEl: '.gallery__button-prev'
+    },
+    thumbs: {
+        swiper: galleryThumbs
+    }
+})
+
