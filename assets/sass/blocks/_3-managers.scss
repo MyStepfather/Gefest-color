@@ -49,7 +49,8 @@
             font-size: 14px;
             line-height: 18px;
             color: rgba(51, 51, 51, 0.4);
-            text-transform: lowercase;
+            font-variant-ligatures: none;
+            // text-transform: lowercase;
         }
     }
     &-downer {

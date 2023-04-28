@@ -77,14 +77,19 @@
     }
 }
 
-.swiper-button-prev.main-slider__button-prev.gallery__button-prev,
+.swiper-button-prev.main-slider__button-prev.gallery__button-prev {
+    left: var(--swiper-navigation-sides-offset,20px);
+}
 .swiper-button-next.main-slider__button-next.gallery__button-next {
-/*     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
+    right: var(--swiper-navigation-sides-offset,20px);
 }
 /* .swiper-slide.gallery-thumbs__slide.swiper-slide-visible.swiper-slide-active.swiper-slide-thumb-active {
     box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.2);
     opacity: 1;
 } */
+
+@media(max-width:650px) {
+    .gallery {
+        padding: 92px 0 45px;
+    }
+}

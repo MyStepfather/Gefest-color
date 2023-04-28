@@ -4,32 +4,39 @@ let bcg = document.querySelector('.overlay');
 
 function price1 () {
     let buttons = document.querySelectorAll('.accordeon__right-part');
-    let modal = document.querySelector('#price-1');
-    let cross = document.querySelector('.modal__cross');
+    let modals = document.querySelectorAll('.prices');
+    let cross = document.querySelectorAll('.modal__cross');
     
-    buttons.forEach(button => {
-        function openModal() {
-            body.classList.add('overflow-y-hidden');
-            html.classList.add('overflow-y-hidden');
-            modal.classList.add('show');
-            bcg.classList.add('show');
-            let priceBtn = modal.querySelector('.btn-green');
-            let form = document.querySelector('#form-main');
-            priceBtn.addEventListener('click', function() {
-                modal.classList.remove('show');
-                form.classList.add('show');
-            })
-        }
-        function closeModal() {
-            body.classList.remove('overflow-y-hidden');
-            html.classList.remove('overflow-y-hidden');
-            modal.classList.remove('show');
-            bcg.classList.remove('show');
-        }
+    function openModal(index) {
+        body.classList.add('overflow-y-hidden');
+        html.classList.add('overflow-y-hidden');    
+        modals[index].classList.add('show');
+        bcg.classList.add('show');
+        let priceBtn = modals[index].querySelector('.btn-green');
+        let form = document.querySelector('#form-main');
+        priceBtn.addEventListener('click', function() {
+            modals[index].classList.remove('show');
+            form.classList.add('show');
+        })
+    }
+    
+    function closeModal(index) {
+        body.classList.remove('overflow-y-hidden');
+        html.classList.remove('overflow-y-hidden');
+        modals[index].classList.remove('show');
+        bcg.classList.remove('show');
+    }
 
-        button.addEventListener('click', openModal);
-        cross.addEventListener('click', closeModal);
-        bcg.addEventListener('click', closeModal);
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', function() {
+            openModal(index);
+        });
+        cross[index].addEventListener('click', function() {
+            closeModal(index);
+        });
+        bcg.addEventListener('click', function() {
+            closeModal(index);
+        });
     });
 }
 

@@ -35,8 +35,8 @@
 .footer-contacts {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    &__adress,&__time,&__phone {
+    justify-content: space-between;
+    &__adress,&__time,&__phone,&__email {
         display: flex;
         flex-direction: row;
         gap: 31px;

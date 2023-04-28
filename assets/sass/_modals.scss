@@ -121,14 +121,26 @@
         font-size: 13px;
         .col-1 {
             width: 30%;
+            &--wide {
+                width: 70%;
+            }
             
         }
         .col-2 {
             width: 35%;
-
+            &--thick {
+                width: 30%;
+            }
         }
         .col-3 {
             width: 35%;
         }
     }
+}
+
+.col-1--wide {
+    width: 70% !important;
+}
+.col-2--thick {
+    width: 30% !important;
 }
