@@ -7,8 +7,8 @@
     <title>Gefest Color</title>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link rel="stylesheet" href="css/style.css?v=68">
-    <link rel="stylesheet" href="assets/fonts/stylesheet.css?v=2">
+    <link rel="stylesheet" href="css/style.css?v=71">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css?v=3">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -108,7 +108,7 @@
                             <div class="swiper-slide main-slider__slide">
                                 <img class="main-slider__slide slide__img" src="assets/img/slider_5.png" alt="">
                                 <div class="main-slider__slide slide__border">
-                                    <h2 class="slide__text">Новое оборудование с сертификатами</h2>
+                                    <a href="#sale"><h2 class="slide__text" style="cursor: pointer;">Скидка на первый заказ</h2></a>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +371,7 @@
                     </div>
                     <div class="swiper-container services-container desc-hidden-650">
                         <div class="swiper-wrapper services-wrapper">
-                            <div class="swiper-slide services-slide ">
+                            <div class="accordeon__item accordeon__item--active swiper-slide services-slide ">
                                 <div class="services-slider__left-part">
                                     <p class="services-slider__num">01</p>
                                     <h3 class="services-slider__title">ЦЕНЫ НА ПОКРАСКУ АВТОМОБИЛЬНЫХ ДИСКОВ</h3>
@@ -379,7 +379,7 @@
                                 </div>
                                 <div class="accordeon__right-part services-slider__right-part rotate"></div>
                             </div>
-                            <div class="swiper-slide services-slide">
+                            <div class="accordeon__item accordeon__item--active swiper-slide services-slide">
                                 <div class="services-slider__left-part">
                                     <p class="services-slider__num">02</p>
                                     <h3 class="services-slider__title">Порошковая покраска изделий из металла</h3>
@@ -395,7 +395,7 @@
                                 </div>
                                 <div class="accordeon__right-part services-slider__right-part rotate"></div>
                             </div> -->
-                            <div class="swiper-slide services-slide">
+                            <div class="accordeon__item accordeon__item--active swiper-slide services-slide">
                                 <div class="services-slider__left-part">
                                     <p class="services-slider__num">03</p>
                                     <h3 class="services-slider__title">Пескоструйная обработка</h3>
@@ -693,31 +693,31 @@
                         <div class="swiper-container gallery-thumbs__container">
                             <div class="swiper-wrapper gallery-thumbs__wrapper">
                                 <div class="swiper-slide gallery-thumbs__slide">
-                                    <img src="assets/img/gallery/1.jpeg" alt="">
+                                    <img class="gallery-thumbs__pic gallery-thumbs__pic--active" src="assets/img/gallery/1.jpeg" alt="">
                                 </div>
                                 <div class="swiper-slide gallery-thumbs__slide">
-                                    <img src="assets/img/gallery/2.jpeg" alt="">
+                                    <img class="gallery-thumbs__pic" src="assets/img/gallery/2.jpeg" alt="">
                                 </div>
                                 <div class="swiper-slide gallery-thumbs__slide">
-                                    <img src="assets/img/gallery/3.jpeg" alt="">
+                                    <img class="gallery-thumbs__pic" src="assets/img/gallery/3.jpeg" alt="">
                                 </div>
                                 <div class="swiper-slide gallery-thumbs__slide">
-                                    <img src="assets/img/gallery/4.jpeg" alt="">
+                                    <img class="gallery-thumbs__pic" src="assets/img/gallery/4.jpeg" alt="">
                                 </div>
                                 <div class="swiper-slide gallery-thumbs__slide">
-                                    <img src="assets/img/gallery/5.jpeg" alt="">
+                                    <img class="gallery-thumbs__pic" src="assets/img/gallery/5.jpeg" alt="">
                                 </div>
                                 <div class="swiper-slide gallery-thumbs__slide">
-                                    <img src="assets/img/gallery/6.jpeg" alt="">
+                                    <img class="gallery-thumbs__pic" src="assets/img/gallery/6.jpeg" alt="">
                                 </div>
                                 <div class="swiper-slide gallery-thumbs__slide">
-                                    <img src="assets/img/gallery/7.jpeg" alt="">
+                                    <img class="gallery-thumbs__pic" src="assets/img/gallery/7.jpeg" alt="">
                                 </div>
                                 <div class="swiper-slide gallery-thumbs__slide">
-                                    <img src="assets/img/gallery/8.jpeg" alt="">
+                                    <img class="gallery-thumbs__pic" src="assets/img/gallery/8.jpeg" alt="">
                                 </div>
                                 <div class="swiper-slide gallery-thumbs__slide">
-                                    <img src="assets/img/gallery/9.jpeg" alt="">
+                                    <img class="gallery-thumbs__pic" src="assets/img/gallery/9.jpeg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -732,22 +732,30 @@
                         <div class="contacts__header contacts__data">
                             <h2 class="contacts__title">Наши контакты</h2>
                             <div class="contacts__items">
-                                <div class="contacts__item">
-                                    <img src="assets/img/icons/contacts-adress.svg" alt="">
-                                    <p class="contacts__descr">г.Москва, 2-й Южнопортовый пр., д. 26А, стр. 4</p>
-                                </div>
-                                <div class="contacts__item">
-                                    <img src="assets/img/icons/contacts-email.svg" alt="">
-                                    <p class="contacts__descr">pankratov@gefestcapital.ru</p>
-                                </div>
-                                <div class="contacts__item">
-                                    <img src="assets/img/icons/contacts-phone.svg" alt="">
-                                    <a href="tel:74957489838"><p class="contacts__descr">+7 (495) 748 98 38</p></a>
-                                </div>
-                                <div class="contacts__item">
-                                    <img src="assets/img/icons/contacts-download.svg" alt="">
-                                    <a href="assets/documents/Interactivnie_resheniya_gefestcapital.pdf"><p class="contacts__descr" style="cursor: pointer;">Скачать презентацию</p></a>
-                                </div>
+                                <a href="https://yandex.ru/maps/?text=Гефест%20Колор">
+                                    <div class="contacts__item">
+                                        <img src="assets/img/icons/contacts-adress.svg" alt="">
+                                        <p class="contacts__descr">Москва, 2-й Южнопортовый пр., д. 26А, стр. 4</p>
+                                    </div>
+                                </a>
+                                <a href="href=mailto:pankratov@gefestcapital.ru">
+                                    <div class="contacts__item">
+                                        <img src="assets/img/icons/contacts-email.svg" alt="">
+                                        <p class="contacts__descr">pankratov@gefestcapital.ru</p>
+                                    </div>
+                                </a>
+                                <a href="tel:74957489838">
+                                    <div class="contacts__item">
+                                        <img src="assets/img/icons/contacts-phone.svg" alt="">
+                                        <p class="contacts__descr">+7 (495) 748 98 38</p>
+                                    </div>
+                                </a>
+                                <a href="assets/documents/Interactivnie_resheniya_gefestcapital.pdf">
+                                    <div id="download-pdf" class="contacts__item">
+                                        <img src="assets/img/icons/contacts-download.svg" alt="">
+                                        <p class="contacts__descr" style="cursor: pointer;">Скачать презентацию</p>
+                                    </div>
+                                </a> 
                             </div>
                         </div>
                         <div class="contacts__map">
@@ -789,7 +797,7 @@
                     <a href="" class="footer-logo">
                         <img class="footer-logo__logo" src="assets/img/icons/logo-wh.svg" alt="">
                         <p class="footer-logo__descr mob-hidden">© Порошковая окраска и пескоструйная обработка. 2023г.</p>
-                        <p class="footer-logo__descr tablet-desc-hidden">Цех порошковой окраски и пескоструйной очистки</p>
+                        <p class="footer-logo__descr tablet-desc-hidden">© Цех порошковой окраски и пескоструйной очистки. 2023г.</p>
                     </a>
                     <div class="footer-menu">
                         <a class="footer-menu__item" href="#about">О компании</a>
@@ -800,26 +808,24 @@
                         <a class="footer-menu__item" href="#contacts">Контакты</a>
                     </div>
                     <div class="footer-contacts">
-                        <div class="footer-contacts__adress">
-                            <img src="assets/img/icons/adress.svg" alt="">
-                            <p>г. Москва, 2-й Южнопортовый пр., д. 26А, стр. 4</p>
-                        </div>
-                        <div class="footer-contacts__time">
-                            <img src="assets/img/icons/time.svg" alt="">
-                            <p>Пн -Пт с 9:00 до 19:00</p>
-                        </div>
-                        <div class="footer-contacts__phone">
-                            <img src="assets/img/icons/phone.svg" alt="">
-                            <p>+7 (495) 748-98-38</p>
-                        </div>
-                        <div class="footer-contacts__email">
-                            <img src="assets/img/icons/adress.svg" alt="">
-                            <p>pankratov@gefestcapital.ru</p>
-                        </div>
-                        <button class="btn-green form-trig-btn">Связаться</button>
-                        <div class="footer-social tablet-desc-hidden">
-                            <a href="https://www.facebook.com/gefestcolor/"><img src="assets/img/icons/facebook.svg" alt=""></a>
-                            <a href="https://www.instagram.com/gefestcolor/"><img src="assets/img/icons/insta.svg" alt=""></a>
+                        <div class="footer-contacts__upper">
+                            <div class="footer-contacts__adress">
+                                <img src="assets/img/icons/adress.svg" alt="">
+                                <p>Москва, 2-й Южнопортовый пр., д. 26А, стр. 4</p>
+                            </div>
+                            <div class="footer-contacts__time">
+                                <img src="assets/img/icons/time.svg" alt="">
+                                <p>Пн -Пт с 9:00 до 19:00</p>
+                            </div>
+                            <div class="footer-contacts__phone">
+                                <img src="assets/img/icons/phone.svg" alt="">
+                                <p>+7 (495) 748-98-38</p>
+                            </div>
+                            <div class="footer-contacts__email">
+                                <img src="assets/img/icons/adress.svg" alt="">
+                                <p>pankratov@gefestcapital.ru</p>
+                            </div>
+                            <button class="footer__btn-form btn-green form-trig-btn">Связаться</button>
                         </div>
                     </div>
                     <div class="footer-copyright">© Порошковая окраска и пескоструйная обработка. 2023г.</div>
@@ -827,6 +833,10 @@
                         <a href="https://www.facebook.com/gefestcolor/"><img src="assets/img/icons/facebook.svg" alt=""></a>
                         <a href="https://www.instagram.com/gefestcolor/"><img src="assets/img/icons/insta.svg" alt=""></a>
                     </div>
+                </div>
+                <div class="footer-social footer-social--mob tablet-desc-hidden">
+                    <a href="https://www.facebook.com/gefestcolor/"><img src="assets/img/icons/facebook.svg" alt=""></a>
+                    <a href="https://www.instagram.com/gefestcolor/"><img src="assets/img/icons/insta.svg" alt=""></a>
                 </div>
             </div>  
         </footer>
@@ -910,7 +920,7 @@
                 </div>
                 <div class="table__row">
                     <div class="col-1 col-1--wide">Перекраска</div>
-                    <div class="col-2 col-2--thick">+30% к стоимости</div>
+                    <div class="col-2 col-2--thick">+ 30% к стоимости</div>
                 </div>
                 <div class="table__row">
                     <div class="col-1 col-1--wide">Окраска в металлик</div>
@@ -1285,11 +1295,11 @@
     
     
     <div class="overlay"></div>
-    <script src="assets/js/index.js?v=4"></script>
-    <script src="assets/js/sliders.js?v=4"></script>
-    <script src="assets/js/modals.js?v=4"></script>
-    <script src="assets/js/particles.js?v=4"></script>
-    <script src="assets/js/app.js?v=4"></script>
+    <script src="assets/js/index.js?v=7"></script>
+    <script src="assets/js/sliders.js?v=7"></script>
+    <script src="assets/js/modals.js?v=7"></script>
+    <script src="assets/js/particles.js?v=7"></script>
+    <script src="assets/js/app.js?v=7"></script>
 
 
 

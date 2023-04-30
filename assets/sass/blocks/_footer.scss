@@ -10,7 +10,9 @@
 .footer-logo {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    // gap: 20px;
+    padding-right: 10px;
     &__logo {
         max-width: 86px;
     }
@@ -31,11 +33,19 @@
     font-size: 14px;
     line-height: 15px;
     color: #FFFFFF;
+    padding-right: 10px;
 }
 .footer-contacts {
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    &__upper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     &__adress,&__time,&__phone,&__email {
         display: flex;
         flex-direction: row;
@@ -58,8 +68,15 @@
 }
 
 @media(max-width: 768px) {
+    .footer-logo, .footer-menu {
+        width: 25%;
+    }
     .footer-contacts div:last-child {
-        margin-top: 44px;
+        // margin-top: 44px;
+        margin-top: unset;
+    }
+    .footer-contacts__upper {
+        gap: 10px;
     }
     .footer-menu {
         gap: 0;
@@ -72,15 +89,21 @@
         gap: 0;
     }
     .footer-contacts {
-        max-width: 205px;
+        // max-width: 205px;
+        width: 45%;
     }
     .footer-logo__descr {
         max-width: 133px;
+    }
+    .footer-social--mob {
+        margin-top: 50px;
+        justify-content: center
     }
 }
 
 @media(max-width:500px) {
     .footer{
+        padding: 38px 0 36px;
         position: relative;
     }
     .footer::after {
@@ -96,8 +119,11 @@
         align-items: center;
     }
     .footer-logo {
+        width: 100%;
         align-items: center;
         text-align: center;
+        padding-right: unset;
+        gap: 20px;
     }
     .footer-logo__descr {
         max-width: 320px;
@@ -107,16 +133,18 @@
         color: #FFFFFF;
     }
     .footer-menu {
+        width: 100%;
         font-weight: 500;
         font-size: 14px;
-        margin-top: 43px;
+        margin-top: 30px;
         align-items: center;
         height: 170px;
-        // padding-bottom: ;
+        padding-right: unset;
     }
     .footer-contacts {
         width: 100%;
         max-width: unset;
+        padding-right: unset;
         margin-top: 71px;
         align-items: center;
         text-align: center;
@@ -130,6 +158,15 @@
            margin-top: 18px; 
         }
     }
+    .footer-contacts__upper {
+        align-items: center;
+    }
+    .footer-social {
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        align-items: center;
+    }
     .footer-copyright {
         display: block;
         margin-top: 25px;
@@ -138,5 +175,9 @@
         font-size: 12px;
         line-height: 15px;
         color: rgba(255, 255, 255, 0.7);
+    }
+    .footer-social--mob {
+        margin-top: 30px;
+        justify-content: center
     }
 }

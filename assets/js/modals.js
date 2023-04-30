@@ -2,8 +2,8 @@ let body = document.querySelector('body');
 let html = document.querySelector('html');
 let bcg = document.querySelector('.overlay');
 
-function price1 () {
-    let buttons = document.querySelectorAll('.accordeon__right-part');
+function price () {
+    let buttons = document.querySelectorAll('.accordeon__item');
     let modals = document.querySelectorAll('.prices');
     let cross = document.querySelectorAll('.modal__cross');
     
@@ -29,7 +29,12 @@ function price1 () {
 
     buttons.forEach((button, index) => {
         button.addEventListener('click', function() {
-            openModal(index);
+            if(button.classList.contains('accordeon__item--active')){
+                openModal(index);
+            } else {
+                return;
+            }
+            
         });
         cross[index].addEventListener('click', function() {
             closeModal(index);
@@ -109,6 +114,6 @@ function form() {
     });
 }
 
-price1 ();
+price ();
 article ();
 form ();

@@ -50,10 +50,10 @@
         cursor: pointer;
         &--active {
             height: 233px;
-
         }
     }
     &__img {
+        pointer-events: none;
         z-index: 1;
         position: absolute;
         opacity: 0;
@@ -100,7 +100,7 @@
     }
     &__right-part {
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-        pointer-events: none;
+        // pointer-events: none;
         z-index: 2;
         width: 77px;
         height: 77px;
@@ -110,9 +110,9 @@
         background-position: center center;
         background-repeat: no-repeat;
         cursor: pointer;
-        &--active {
-            pointer-events: auto;
-        }
+        // &--active {
+        //     pointer-events: auto;
+        // }
     }
 }
 

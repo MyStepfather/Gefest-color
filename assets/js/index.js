@@ -183,23 +183,33 @@ function services() {
         // Удаляем классы активных элементов
             items.forEach(i => {
                 if (i !== item) {
-                    i.classList.remove('accordeon__item--active');
-                    i.querySelector('.accordeon__img').classList.remove('accordeon__img--active');
-                    i.querySelector('.accordeon__descr').classList.remove('accordeon__descr--active');
-                    i.style.color = "rgba(51, 51, 51, 0.4)";
-                    i.querySelector('.accordeon__right-part').classList.remove('rotate', 'accordeon__right-part--active');
+                    if (i.querySelector('.accordeon__img')) {
+                        i.classList.remove('accordeon__item--active');
+                        i.querySelector('.accordeon__img').classList.remove('accordeon__img--active');
+                        i.querySelector('.accordeon__descr').classList.remove('accordeon__descr--active');
+                        i.style.color = "rgba(51, 51, 51, 0.4)";
+                        // i.style.pointerEvents = "none";
+                        i.querySelector('.accordeon__right-part').classList.remove('rotate');
+                    }
+                    else {
+                        return;
+                    }
                 }
             });
             
             // Добавляем классы активному элементу
-            item.classList.add('accordeon__item--active');
-    
-            if (item.classList.contains('accordeon__item--active')) {
-                item.querySelector('.accordeon__img').classList.add('accordeon__img--active');
-                item.querySelector('.accordeon__descr').classList.add('accordeon__descr--active');
-                item.style.color = "#000";
-                item.querySelector('.accordeon__right-part').classList.add('accordeon__right-part--active', 'rotate');
-            }
+            setTimeout(() => {
+                if(item.querySelector('.accordeon__img')) {
+                    item.classList.add('accordeon__item--active');    
+                    if (item.classList.contains('accordeon__item--active')) {
+                        item.querySelector('.accordeon__img').classList.add('accordeon__img--active');
+                        item.querySelector('.accordeon__descr').classList.add('accordeon__descr--active');
+                        item.style.color = "#000";
+                        // item.style.pointerEvents = "auto";
+                        item.querySelector('.accordeon__right-part').classList.add('rotate');
+                    }
+                }
+            }, 300);
         });
     });
 }
@@ -261,6 +271,18 @@ function upBtn() {
     });    
 }
 
+function galleryThumbs() {
+    let pics = document.querySelectorAll('.gallery-thumbs__pic');
+    pics.forEach(pic => {
+        pic.addEventListener('click', function() {
+            pics.forEach(p => {
+                p.classList.remove('gallery-thumbs__pic--active');
+            })
+            pic.classList.add('gallery-thumbs__pic--active');
+        });
+    });
+}
+
 smoothScroll();
 navSticky();
 services();
@@ -269,3 +291,4 @@ secondSlider();
 circleReasons();
 upBtn();
 // topics();
+galleryThumbs();

@@ -1,9 +1,11 @@
 var mainSlider = new Swiper('.swiper-container.main-slider', {
     // параметры слайдера
-    autoplay: true,
-    delay: 300,
+    autoplay: {
+        delay: 2500,
+        speed: 100,
+        disableOnInteraction: false
+    },
     loop: true,
-    speed: 500,
     spaceBetween: 200,
     navigation: {
         nextEl: '.main-slider__button-next',
@@ -140,6 +142,7 @@ var galleryThumbs = new Swiper('.swiper-container.gallery-thumbs__container', {
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
+    slidesPerGroup: 4,
     navigation: {
         nextEl: '.gallery-thumbs__button-next',
         prevEl: '.gallery-thumbs__button-prev'
