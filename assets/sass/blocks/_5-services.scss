@@ -207,4 +207,16 @@
         transform: translateX(-50%);
         bottom: 40px !important;
     }
+    .services-slider__right-part-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .services-slider__action {
+        transition: 0.2s;
+        color: #333333;
+        font-weight: 800;
+    }
 }
