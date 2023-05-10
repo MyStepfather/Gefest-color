@@ -348,6 +348,12 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
+.nav__item {
+  transition: 0.1s;
+}
+.nav__item:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
 
 /* .nav-burger {
     background-color: #D9D9D9;
