@@ -272,6 +272,11 @@ img {
   font-weight: 800;
 }
 
+@media (max-width: 540px) {
+  .not-for-mob {
+    display: none;
+  }
+}
 .supheader {
   padding: 12px 16px 6px;
   background-color: #F0F1F1;
@@ -1079,7 +1084,6 @@ img {
   flex-direction: column;
   padding: 44px 30px 50px 30px;
   width: calc(33% - 40px);
-  max-width: 387px;
   align-items: center;
   background: #FFFFFF;
   border-radius: 20px;
@@ -1107,6 +1111,7 @@ img {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
 }
 .manager-upper__post {
   margin-top: 8px;
@@ -1115,6 +1120,7 @@ img {
   line-height: 18px;
   color: rgba(51, 51, 51, 0.4);
   font-variant-ligatures: none;
+  text-align: center;
 }
 .manager-downer {
   margin-top: 34px;
@@ -1246,6 +1252,12 @@ img {
   height: 12px;
   border-radius: 50%;
   background-color: #BED730;
+}
+.services__mob {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .accordeon {
@@ -2099,6 +2111,7 @@ img {
   }
 }
 .clients {
+  position: relative;
   padding: 105px 0;
   background-color: #F1F1F1;
 }
@@ -2139,16 +2152,29 @@ img {
   background: #FFFFFF;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  max-width: 183px;
   height: 83px !important;
   display: flex !important;
   justify-content: center;
   align-items: center;
 }
 
+.swiper-button-prev.main-slider__button-prev.clients__button-prev {
+  left: 30%;
+  top: unset;
+  bottom: 35px;
+  display: block !important;
+}
+
+.swiper-button-next.main-slider__button-next.clients__button-next {
+  right: 30%;
+  top: unset;
+  bottom: 35px;
+  display: block !important;
+}
+
 @media (max-width: 768px) {
   .clients {
-    padding: 102px 0 62px;
+    padding: 102px 0 102px;
   }
 }
 .video {
@@ -2281,11 +2307,16 @@ img {
 }
 
 .swiper-button-prev.main-slider__button-prev.gallery__button-prev {
-  left: var(--swiper-navigation-sides-offset, 20px);
+  left: 30%;
+  top: unset;
+  bottom: 35px;
+  display: block !important;
 }
 
 .swiper-button-next.main-slider__button-next.gallery__button-next {
-  right: var(--swiper-navigation-sides-offset, 20px);
+  right: 30%;
+  top: unset;
+  bottom: 35px;
 }
 
 .swiper-button-prev.main-slider__button-prev.gallery-thumbs__button-prev {
@@ -2304,11 +2335,11 @@ img {
 
 @media (max-width: 650px) {
   .gallery {
-    padding: 92px 0 80px;
+    padding: 92px 0 100px;
   }
 }
 .contacts {
-  padding: 92px 0 100px;
+  padding: 92px 0 60px;
 }
 .contacts__title {
   position: relative;
@@ -2330,7 +2361,7 @@ img {
 .contacts__title::after {
   content: "";
   position: absolute;
-  left: 80px;
+  left: 90px;
   top: -42px;
   width: 12px;
   height: 12px;
@@ -2340,7 +2371,6 @@ img {
 .contacts__inner {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 .contacts__data {
   display: flex;
@@ -2381,7 +2411,7 @@ img {
     flex-direction: column;
     align-items: flex-start;
     gap: 34px;
-    height: 800px;
+    height: 700px;
   }
   .contacts__item {
     gap: 20px;

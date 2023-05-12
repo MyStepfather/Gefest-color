@@ -1,5 +1,5 @@
 .contacts {
-    padding: 92px 0 100px;
+    padding: 92px 0 60px;
     
     &__title {
         position: relative;
@@ -20,7 +20,7 @@
         &::after {
             content: "";
             position: absolute;
-            left: 80px;
+            left: 90px;
             top: -42px;
             width: 12px;
             height: 12px;
@@ -31,7 +31,7 @@
     &__inner {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        // justify-content: space-between;
 
     }
     &__data {
@@ -78,7 +78,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 34px;
-        height: 800px;
+        height: 700px;
     }
     .contacts__item {
         gap: 20px;

@@ -27,6 +27,12 @@
             background-color: $green;
         }
     }
+    &__mob {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 .accordeon {
     margin-top: 63px;

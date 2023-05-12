@@ -1,4 +1,5 @@
 .clients {
+    position: relative;
     padding: 105px 0;
     background-color: #F1F1F1;
     &__title {
@@ -38,9 +39,8 @@
         background: #FFFFFF;
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
-
         // width: 100%;
-        max-width: 183px;
+        // max-width: 183px;
         height: 83px !important;
         display: flex !important;
         justify-content: center;
@@ -48,8 +48,22 @@
 
     }
 }
+
+.swiper-button-prev.main-slider__button-prev.clients__button-prev {
+    left: 30%;
+    top: unset;
+    bottom: 35px;
+    display: block !important;
+}
+.swiper-button-next.main-slider__button-next.clients__button-next {
+    right: 30%;
+    top: unset;
+    bottom: 35px;
+    display: block !important;
+}
+
 @media(max-width: 768px) {
     .clients {
-        padding: 102px 0 62px;
+        padding: 102px 0 102px;
     }
 }

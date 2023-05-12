@@ -33,14 +33,16 @@ var managerSlider = new Swiper('.swiper-container.managers-slider', {
     speed: 500,
     spaceBetween: 20,
     controller: true,
-    slidesPerView: "auto",
+    slidesPerView: 3,
     pagination: {
         el: '.swiper-pagination.managers-pagination',
         clickable: true,
     },
     breakpoints: {
         0: {
-            slidesPerView: "auto",
+            slidesPerView: 1,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
         },
         768: {
             slidesPerView: 3,
@@ -54,7 +56,7 @@ var managerSlider = new Swiper('.swiper-container.managers-slider', {
     },
 })
 
-var servicesSlider = new Swiper('.swiper-container.services-container', {
+/* var servicesSlider = new Swiper('.swiper-container.services-container', {
     loop: false,
     speed: 500,
     spaceBetween: 20,
@@ -65,7 +67,7 @@ var servicesSlider = new Swiper('.swiper-container.services-container', {
         prevEl: '.services__button-prev'
     },
 
-})
+}) */
 
 var reviewsSlider = new Swiper('.swiper-container.reviews__slider', {
     loop: false,
@@ -73,6 +75,7 @@ var reviewsSlider = new Swiper('.swiper-container.reviews__slider', {
     spaceBetween: 200,
     centeredSlides: true,
     centeredSlidesBounds: true,
+    loop: true,
     navigation: {
         nextEl: '.reviews__button-next',
         prevEl: '.reviews__button-prev'
@@ -107,11 +110,23 @@ var topicsSlider = new Swiper('.swiper-container.topics__container', {
 
 var clientsSlider = new Swiper('.swiper-container.clients-container', {
     autoplay: true,
-    loop: false,
+    loop: true,
     speed: 500,
     spaceBetween: 20,
     centeredSlides: false,
-    slidesPerView: "auto"
+    slidesPerView: "auto",
+    navigation: {
+        nextEl: '.clients__button-next',
+        prevEl: '.clients__button-prev'
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 'auto',
+        }
+    },
 })
 
 /* var videoSlider = new Swiper('.swiper-container.video__container', {
@@ -135,7 +150,7 @@ var clientsSlider = new Swiper('.swiper-container.clients-container', {
     activeSlide.click();
   }); */
 
-var galleryThumbs = new Swiper('.swiper-container.gallery-thumbs__container', {
+/* var galleryThumbs = new Swiper('.swiper-container.gallery-thumbs__container', {
     spaceBetween: 20,
     slidesPerView: 4,
     centeredSlides: false,
@@ -148,18 +163,30 @@ var galleryThumbs = new Swiper('.swiper-container.gallery-thumbs__container', {
         prevEl: '.gallery-thumbs__button-prev'
     },
 
-})
+}) */
 
 var gallerySlider = new Swiper('.swiper-container.gallery__container', {
-    slidesPerView: 1,
+    slidesPerView: 3,
+    loop: true,
     spaceBetween: 20,
     centeredSlides: true,
     navigation: {
         nextEl: '.gallery__button-next',
         prevEl: '.gallery__button-prev'
     },
-    thumbs: {
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        }
+    },
+/*     thumbs: {
         swiper: galleryThumbs
-    }
+    } */
 })
 
