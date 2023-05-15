@@ -113,8 +113,7 @@ var clientsSlider = new Swiper('.swiper-container.clients-container', {
     loop: true,
     speed: 500,
     spaceBetween: 20,
-    centeredSlides: false,
-    slidesPerView: "auto",
+    // centeredSlides: false,
     navigation: {
         nextEl: '.clients__button-next',
         prevEl: '.clients__button-prev'
@@ -124,7 +123,10 @@ var clientsSlider = new Swiper('.swiper-container.clients-container', {
             slidesPerView: 2,
         },
         768: {
-            slidesPerView: 'auto',
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 3,
         }
     },
 })

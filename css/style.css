@@ -2143,19 +2143,26 @@ img {
   background-color: #BED730;
 }
 .clients__wrapper {
-  width: 100%;
+  width: 110%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+.clients-container {
+  width: 100%;
+  overflow: hidden;
+}
 .clients__background {
   background: #FFFFFF;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   height: 83px !important;
   display: flex !important;
   justify-content: center;
   align-items: center;
+}
+
+.img-rjd {
+  max-width: 40%;
 }
 
 .swiper-button-prev.main-slider__button-prev.clients__button-prev {
@@ -2266,7 +2273,6 @@ img {
 }
 .gallery__container {
   width: 100%;
-  max-width: 996px;
   overflow-x: hidden;
   margin: 0 auto;
 }
