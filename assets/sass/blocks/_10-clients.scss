@@ -9,7 +9,7 @@
         font-size: 36px;
         line-height: 44px;
         &::before {
-            content: "Наши клиенты";
+            content: "Наши партнеры";
             position: absolute;
             top: -44px;
             font-weight: 800;
@@ -45,12 +45,16 @@
         // box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
         // width: unset !important;
-        height: 83px !important;
+        height: 415px !important;
         display: flex !important;
         justify-content: center;
         align-items: center;
         // max-width: 400px;
+        padding: 0 10px;
 
+    }
+    &__img {
+        // height: inherit;
     }
 }
 

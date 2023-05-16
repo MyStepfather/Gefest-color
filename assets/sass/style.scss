@@ -9,10 +9,6 @@
 @import 'blocks/2-about';
 @import 'blocks/3-managers';
 @import 'blocks/4-sale';
-@import 'blocks/5-services';
-@import 'blocks/6-price';
-@import 'blocks/7-reasons';
-@import 'blocks/8-reviews';
 @import 'blocks/9-topics';
 @import 'blocks/10-clients';
 @import 'blocks/11-video';
@@ -32,11 +28,10 @@
 
 body {
     font-family: 'TT Norms Pro';
-    background-color: #FAFAFA;
+    background-color: #fff;
     font-size: 16px;
     width: 100vw;
     max-width: 100vw;
-
     // position:relative;
     overflow-x: hidden;
     box-sizing: border-box;

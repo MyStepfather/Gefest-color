@@ -9,14 +9,13 @@
         
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         height: 100%;
     }
 }
 .about-header {
-/*     display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__title {
         position: relative;
         width: 387px;
@@ -43,6 +42,9 @@
             border-radius: 50%;
             background-color: $green;
         }
+    }
+    &__photo {
+        width: 90%;
     }
 }
 

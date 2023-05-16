@@ -14,7 +14,7 @@
 .manager {
     display: flex;
     flex-direction: column;
-    padding: 44px 30px 50px 30px;
+    border: 1px solid #fff;
     width: calc(33% - 40px) ;
     // max-width: 387px;
     align-items: center;
@@ -22,46 +22,61 @@
     border-radius: 20px;
     transition: 0.2s;
     cursor: pointer;
-    &:hover {
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-        transition: 0.2s;
+    position: relative;
+    &__back {
+        background-color: #FFFFFF;
+        transform: translateY(calc(-100% + 1px));
+        // border-bottom-left-radius: 20px;
+        // border-bottom-right-radius: 20px;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        // opacity: 0.8;
     }
-    &-upper {
+    &__text {
+        padding: 15px 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        &__photo {
-            height: 100px;
-            width: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        &__name {
-            margin-top: 21px;
-            font-weight: 800;
-            font-size: 14px;
-            line-height: 18px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-        &__post {
-            margin-top: 8px;
-            font-weight: 800;
-            font-size: 14px;
-            line-height: 18px;
-            color: rgba(51, 51, 51, 0.4);
-            font-variant-ligatures: none;
-            text-align: center;
-            // text-transform: lowercase;
+        gap: 10px;
+        h2 {
+            font-size: 20px;
         }
     }
-    &-downer {
-        margin-top: 34px;
-        text-align: center;
-        &__info {
-            font-weight: 300;
+    &__photo {
+        border-radius: 20px;
+    }
+    &:nth-child(3) {
+        .manager__back {
+            transform: unset;
+            bottom: 0px
+        }
+        .manager__photo {
+            border-bottom-left-radius: unset;
+            border-bottom-right-radius: unset;
         }
     }
+    &:nth-child(4) {
+        .manager__back {
+            transform: unset;
+            bottom: 0px
+        }
+        .manager__photo {
+            border-bottom-left-radius: unset;
+            border-bottom-right-radius: unset;
+        }
+    }
+    &:nth-child(5) {
+        .manager__back {
+            transform: unset;
+            bottom: 0px
+        }
+        .manager__photo {
+            border-bottom-left-radius: unset;
+            border-bottom-right-radius: unset;
+        }
+    }
+    
 }
 .managers-slider {
     position: relative;

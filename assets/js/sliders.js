@@ -1,10 +1,10 @@
 var mainSlider = new Swiper('.swiper-container.main-slider', {
     // параметры слайдера
-    autoplay: {
+/*     autoplay: {
         delay: 2500,
         speed: 100,
         disableOnInteraction: false
-    },
+    }, */
     loop: true,
     spaceBetween: 200,
     navigation: {
