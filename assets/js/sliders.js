@@ -5,7 +5,7 @@ var mainSlider = new Swiper('.swiper-container.main-slider', {
         speed: 100,
         disableOnInteraction: false
     },
-    loop: true,
+    loop: false,
     spaceBetween: 200,
     navigation: {
         nextEl: '.main-slider__button-next',

@@ -133,7 +133,7 @@ img {
   min-width: unset;
 }
 
-.btn-green {
+.btn-green, .custom-fields-form-button357 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +146,7 @@ img {
   font-weight: 800;
   font-size: 10px;
 }
-.btn-green_mob-nav {
+.btn-green_mob-nav, .custom-fields-form-button357_mob-nav {
   width: 100%;
   /* max-width: 153px; */
   min-width: unset;
@@ -292,6 +292,12 @@ img {
   width: 100%;
   padding: 36px 0;
   border-bottom: 1px solid #8C95A2;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: -117px;
+  background-color: #FAF9F6;
+  transition: top 0.3s ease-in-out;
 }
 .header__main {
   display: flex;
@@ -332,6 +338,7 @@ img {
 .navigate {
   padding: 20px 0;
   z-index: 99;
+  margin-top: 117px;
 }
 .navigate--sticky {
   background-color: #FAFAFA;
@@ -436,6 +443,7 @@ img {
   }
   .navigate {
     padding: 0;
+    margin-top: 50px;
   }
   .nav {
     position: absolute;
@@ -518,6 +526,10 @@ img {
 /* @media(max-width: 768px) {
 
 } */
+.sticky {
+  top: 0;
+}
+
 .footer {
   padding: 38px 0 56px;
   background-color: #333333;
@@ -1088,7 +1100,6 @@ img {
   background: #FFFFFF;
   border-radius: 20px;
   transition: 0.2s;
-  cursor: pointer;
 }
 .manager:hover {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
@@ -1134,15 +1145,20 @@ img {
   position: relative;
 }
 
-.managers-pagination {
-  top: unset !important;
-  bottom: -35px !important;
+.swiper-pagination.managers-pagination {
+  display: none;
 }
 
-.swiper-pagination-bullet-active {
-  background: #BED730 !important;
+@media (max-width: 768px) {
+  .swiper-pagination.managers-pagination {
+    top: unset !important;
+    bottom: -35px !important;
+    display: block;
+  }
+  .swiper-pagination-bullet-active {
+    background: #BED730 !important;
+  }
 }
-
 @media (max-width: 962px) {
   .manager {
     padding: 23px 10px 40px;
@@ -3016,7 +3032,7 @@ img {
     overflow-x:hidden;
 } */
 body {
-  font-family: "TT Norms Pro";
+  font-family: "Rubik";
   background-color: #FAFAFA;
   font-size: 16px;
   width: 100vw;

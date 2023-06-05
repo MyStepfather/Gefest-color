@@ -13,6 +13,17 @@
     width: 100%;
     padding: 36px 0;
     border-bottom: 1px solid #8C95A2;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: -117px;
+    // height: 80px;
+    background-color: #FAF9F6;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: center;
+    transition: top 0.3s ease-in-out;
     &__main {
         display: flex;
         align-items: center;
@@ -52,6 +63,7 @@
 .navigate {
     padding: 20px 0;
     z-index: 99;
+    margin-top: 117px;
     &--sticky {
         background-color: #FAFAFA;
         position: sticky;
@@ -169,6 +181,7 @@
     }
     .navigate {
         padding: 0;
+        margin-top: 50px;
     }
     .nav {
         position: absolute;
@@ -256,3 +269,7 @@
 /* @media(max-width: 768px) {
 
 } */
+
+.sticky {
+    top: 0;
+}
